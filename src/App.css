@@ -274,6 +274,12 @@ html {
   height: auto; /* Default height for large devices */
 }
 
+@media (max-width: 1024px) {
+  /* For medium devices */
+  .testimonialresponsive-div {
+    height: auto;
+  }}
+
 @media (max-width: 768px) {
   /* For medium devices */
   .testimonialresponsive-div {
@@ -823,3 +829,47 @@ button.EnquireButton:hover {
   .herotext{
     font-size: 24px !important;
   }
+
+  .corporatetrainingresponsive-div {
+    width: 95%;
+    height: 550px; /* Default height for large devices */
+  }
+  
+  @media (max-width: 1024px) {
+    /* For medium devices */
+    .corporatetrainingresponsive-div {
+      height: 460px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* For medium devices */
+    .corporatetrainingresponsive-div {
+      height: 480px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* For small devices */
+    .corporatetrainingresponsive-div {
+      height: auto;
+    }
+    
+  }
+  
+  @media (max-width: 376px) {
+    /* For small devices */
+    .corporatetrainingresponsive-div {
+      height: auto;
+    }
+    
+  }
+  
+  @media (max-width: 320px) {
+    /* For small devices */
+    .corporatetrainingresponsive-div {
+      height: auto;
+    }
+    
+  }
+  

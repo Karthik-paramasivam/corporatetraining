@@ -632,7 +632,7 @@ export default function Home({ handleModalOpen }) {
     }
       .slick-dots {
       position: absolute;
-      bottom: -25px;
+      bottom: -35px;
       display: block;
       width: 100%;
       padding: 0;
@@ -736,6 +736,16 @@ export default function Home({ handleModalOpen }) {
     font-size: 20px;
     transition: transform 0.3s;
 }
+    slick-dots {
+    position: absolute;
+    bottom: -45px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+}
 
   `;
 
@@ -792,9 +802,21 @@ export default function Home({ handleModalOpen }) {
     autoplay: false,
     cssEase: "linear",
     autoplaySpeed: 4000,
+    adaptiveHeight: true,
+
     // initialSlide: 0,
     arrows: true,
     responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          infinite: true,
+          dots: true,
+          speed: 300,
+        },
+      },
       {
         breakpoint: 1024,
         settings: {
@@ -820,6 +842,9 @@ export default function Home({ handleModalOpen }) {
           slidesToShow: 1,
           slidesToScroll: 1,
           speed: 300,
+          arrows: true,
+          dots: false
+
         },
       },
     ],
@@ -1537,9 +1562,9 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Training">
           <div
             className={`row slide-in-left  ${
-              hasViewedSlide.secondElement ? "animate-slide-in" : ""
+              hasViewedSlide.fourthElement ? "animate-slide-in" : ""
             }`}
-            ref={myRef2}
+            ref={myRef4}
           >
             <div className="col-12 mt-5 text-center">
               <h1 style={{ color: "rgb(4, 18, 113)" }} className="fw-bold">
@@ -1549,10 +1574,10 @@ export default function Home({ handleModalOpen }) {
             <div>
               <Slider
                 {...corporatetraining}
-                className="m-0 p-0 col-12 col-md-12 col-lg-12 m-auto mt-4"
+                className="m-0 p-0 col-9 col-md-10 col-lg-12 m-auto mt-4"
               >
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center  border border-3 border-light rounded-3 p-2 ms-2 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center  border border-3 border-light rounded-3 p-2 ms-2 corporatetrainingresponsive-div">
                     <img
                       src={course1}
                       alt="Human Resource Management Image"
@@ -1568,7 +1593,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center  border  border-3 border-light rounded-3 p-2 ms-2 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center  border  border-3 border-light rounded-3 p-2 ms-2 corporatetrainingresponsive-div">
                     <img
                       src={course2}
                       alt="Leadership & Management Image"
@@ -1583,7 +1608,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3  border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3  border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course3}
                       alt="Team Building Activities Image"
@@ -1598,7 +1623,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course4}
                       alt="Skills Developement Programs Image"
@@ -1614,7 +1639,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course5}
                       alt="Banking, Finance & Treasury Image"
@@ -1630,7 +1655,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course6}
                       alt="Procrument & Supply Chain Image"
@@ -1646,7 +1671,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course7}
                       alt="Quality Management Image"
@@ -1662,7 +1687,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course8}
                       alt="IT & Excel Image"
@@ -1678,7 +1703,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course9}
                       alt="Sales & Customer Service Image"
@@ -1694,7 +1719,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course10}
                       alt="Risk, Audit & Compliance Image"
@@ -1709,7 +1734,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <img
                       src={course11}
                       alt="Bite-Sized Trainings Image"
@@ -1725,7 +1750,7 @@ export default function Home({ handleModalOpen }) {
                 </div>
 
                 <div>
-                  <div className="d-flex flex-column align-items-center justify-content-center text-center border border-3 border-light p-2 ms-2 rounded-3 testimonialresponsive-div">
+                  <div className="d-flex flex-column align-items-center justify-content-center text-center border border-3 border-light p-2 ms-2 rounded-3 corporatetrainingresponsive-div">
                     <h3
                       className="mt-3 text-center fw-bold"
                       style={{ color: "#100AA8" }}
@@ -1736,13 +1761,12 @@ export default function Home({ handleModalOpen }) {
                 </div>
               </Slider>
             </div>
-            <div className="text-center mt-5">
+            <div className="col-12 text-center mt-5">
+              
+
               <button
-                className="mt-5 btn btn-lg text-center text-white Enquirebutton mb-2 mb-lg-0"
-                style={{ background: "#0d278e" }}
-                onClick={() => {
-                  window.location.href = "#"; // Simulate href="#" behavior
-                }}
+                className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
+                onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
               </button>
