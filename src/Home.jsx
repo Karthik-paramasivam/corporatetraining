@@ -1574,9 +1574,9 @@ export default function Home({ handleModalOpen }) {
         <div className="container-fluid mt-5 " ref={counterSectionRef}>
           <div
             className={`row text-white p-3 Trusted-container  slide-in-left  ${
-              hasViewedSlide.secondElement ? "animate-enquire" : ""
+              hasViewedSlide.myElement ? "animate-enquire" : ""
             }`}
-            ref={myRef2}
+            ref={myRef1}
           >
             <div className="col-12 text-center text-black">
               <h2 className="text-center RecognitionsHeading">
@@ -1696,10 +1696,10 @@ export default function Home({ handleModalOpen }) {
         >
           <div
             className={`row text-white   p-3 slide-in-left aboutdivwidth  ${
-              hasViewedSlide.thirdElement ? "animate-enquire" : ""
+              hasViewedSlide.secondElement ? "animate-slide-in" : ""
             }`}
             style={{ backgroundColor: "#011689" }}
-            ref={myRef3}
+            ref={myRef2}
           >
             <div className="col-12  text-center text-white ">
               <h1 className="WingsWayHeading">What Sets us Apart </h1>
@@ -1713,9 +1713,9 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Training">
           <div
             className={`row slide-in-left m-auto aboutdivwidth  ${
-              hasViewedSlide.fourthElement ? "animate-slide-in" : ""
+              hasViewedSlide.thirdElement ? "animate-slide-in" : ""
             }`}
-            ref={myRef4}
+            ref={myRef3}
           >
             <div className="col-12 mt-5 text-center">
               <h1 style={{ color: "#0971CE" }} className="WingsWayHeading">
@@ -2042,7 +2042,6 @@ export default function Home({ handleModalOpen }) {
             hasViewedSlide.sixthElement ? "animate-enquire" : ""
           }`}
           ref={myRef6}
-          id="Testimonials"
         >
           <div className="row  mt-3">
             <div className="col-12 text-center mb-4">
@@ -2316,9 +2315,9 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Reviews">
           <div
             className={`row slide-in-left aboutdivwidth ${
-              hasViewedSlide.sixthElement ? "animate-slide-in" : ""
+              hasViewedSlide.seventhElement ? "animate-slide-in" : ""
             }`}
-            ref={myRef6}
+            ref={myRef7}
           >
             <div className="col-12 mt-5 text-center">
               <h1 style={{ color: "#0971CE" }} className="mt-3">
@@ -2389,130 +2388,14 @@ export default function Home({ handleModalOpen }) {
           </div>
         </div>
 
-        {/* <div
-          className={` container-fluid  mt-5   rounded-4 slide-in-left    ${
-            hasViewedSlide.ninethElement ? "animate-enquire" : ""
-          }`}
-          ref={myRef9}
-          id="Testimonials"
-        >
-          <div className="row  d-flex align-items-center justify-content-center  aboutdivwidth">
-            <div className="col-12 text-center ">
-              <h1 className="Testimonialmainheading">
-                <span>Hear From Our Happy </span>
-                <span style={{ color: "#011689" }}>Students</span>
-              </h1>
-            </div>
-          </div>
-
-          <Slider
-            {...settings}
-            className="m-0 p-0 col-9 col-md-8 col-lg-9 m-auto aboutdivwidth "
-          >
-            <div>
-              <div className="p-3 rounded-3 mt-0 h-auto ">
-                <h3 className="text-center mt-3 Testimonialsubheading">
-                  Harriet Nakazibwe
-                </h3>
-                <p className=" mt-3 text-center Testimonialpara">
-                  I greatly recommend WingsWay as the best institute for ones’
-                  career buildup. It has been a great experience studying at
-                  WingsWay Institute during the pursuing of my IATA PGSA course.
-                  All thankful and grateful of my trainers, Ma’am Sheetal and
-                  Ma’am Tina in this journey of building my career.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className=" p-3 rounded-3 ms-md-2 mt-0 h-auto">
-                <h3 className="text-center mt-3 Testimonialsubheading">
-                  Prateek Pandey
-                </h3>
-                <p className="text-center mt-3 Testimonialpara">
-                  I had completed my PGSA course with them last year. It was a
-                  very comprehensive and useful course and total value for
-                  money! Special thanks to Sheetal ma’am, Tina ma’am, Queena
-                  ma’am, and Cyril sir. I also got a job offer from dnata within
-                  3 months of completing the IATA exam. Interview preparation
-                  was also assisted by my trainers and no extra money was
-                  charged for on the phone advises and free complimentary
-                  sessions from time to time. The best place for aviation
-                  training! WingsWay !
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="p-3  rounded-3  mt-0  h-auto">
-                <h3 className="text-center mt-3 Testimonialsubheading">
-                  Salman Ahmad
-                </h3>
-                <p className="text-center mt-3 Testimonialpara">
-                  The Wingsway Institute was an incredible experience for me. I
-                  had the opportunity to visit their facility and see aircraft
-                  up close.
-                </p>
-                <p className="text-center  Testimonialpara">
-                  Miss Tina Dey was an exceptional trainer who had a passion for
-                  aviation that was truly infectious. Her patience and
-                  dedication to her students were evident in every lesson she
-                  taught. I learned so much from her and felt confident in my
-                  abilities after training with her. Overall, my experience at
-                  the Wingsway Institute was top-notch. The combination of
-                  excellent facilities, experienced instructors, and
-                  top-of-the-line aircraft made for a truly unforgettable
-                  experience. I would highly recommend this institute to anyone
-                  looking to pursue a career in aviation.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="p-3 rounded-3   mt-0 h-auto">
-                <h3 className="text-center mt-3 Testimonialsubheading">
-                  Prashnaa Magar
-                </h3>
-                <p className="text-center mt-3 Testimonialpara">
-                  I had an amazing experience at WingsWay Training Institute.
-                  The instructors were highly knowledgeable and passionate about
-                  their subjects, making learning both engaging and rewarding.
-                  Ms. Tina was so sweet and supportive. The curriculum at
-                  WingsWay Training Institute is well-designed and
-                  comprehensive, covering all the necessary topics and providing
-                  practical skills. Overall, my time at WingsWay Training
-                  Institute exceeded my expectations, and I would highly
-                  recommend it to anyone looking for best Cabin Crew Courses,
-                  PGSA courses, and a supportive learning environment.
-                </p>
-              </div>
-            </div>
-            <div>
-              <div className="p-3  rounded-3  mt-0 h-auto">
-                <h3 className="text-center mt-3 Testimonialsubheading">Wanu</h3>
-                <p className="text-center mt-3 Testimonialpara">
-                  {" "}
-                  Did my PGSA course from WingsWay and the amount of love and
-                  support I got from miss Tina, miss Sheetal, and the entire
-                  team of WingsWay was out of the world. They helped me with
-                  each and everything. I also had the opportunity to visit
-                  Fujairah aviation academy where we did our aircraft visit and
-                  learnt how to become an ATC controller, a pilot as well as an
-                  AME. We got a tour of the hangar as well.
-                </p>
-                <p className="text-center  Testimonialpara">
-                  {" "}
-                  Blessed to have such great trainers who are so dedicated
-                  towards building our future.❤️
-                </p>
-              </div>
-            </div>
-          </Slider>
-        </div> */}
+      
         <div className="container mt-5 " id="learner">
           <div className="m-0 p-0 mt-5 border border-white">
           <div
             className={`row aboutdivwidth p-3 slide-in-left mt-5 align-items-center border border-light  shadow ${
-              hasViewedSlide.seventhElement ? "animate-enquire" : ""
+              hasViewedSlide.eigthElement ? "animate-enquire" : ""
             }`}
-            ref={myRef7}
+            ref={myRef8}
           >
            
             <div className="col-12 col-lg-6 mt-4 mt-lg-4 mt-xxl-0 mb-lg-3 mb-xl-3 mb-xxl-3 justify-content-center border border-white ps-5">
@@ -2565,9 +2448,9 @@ export default function Home({ handleModalOpen }) {
         <div className="container-fluid elevatebannerbackImage elevatewidth p-3 pb-4 mt-5 p-lg-5">
           <div
             className={`row slide-in-left d-flex justify-content-center align-items-center elevatewidth  p-lg-2 p-xl-5  ${
-              hasViewedSlide.tenthElement ? "animate-slide-in" : ""
+              hasViewedSlide.ninethElement ? "animate-slide-in" : ""
             }`}
-            ref={myRef10}
+            ref={myRef9}
           >
             <div className="col-12">
               <h1 className="text-center text-white Getintouchheading">
@@ -2621,7 +2504,7 @@ export default function Home({ handleModalOpen }) {
                 className="footer-link footerlinktext"
                 onClick={(e) => handleFooterLinkClick(e, "Coursediscription")}
               >
-                <p>© 2025 WingsWay All rights reserved</p>
+                <p className="mb-5">© 2025 WingsWay All rights reserved</p>
               </a>
             </div>
 
