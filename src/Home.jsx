@@ -47,12 +47,41 @@ import course8 from "./Images/Course8.png";
 import course9 from "./Images/Course9.png";
 import course10 from "./Images/Course10.png";
 import course11 from "./Images/Course11.png";
+import award from "./Images/award.jpg";
+import invest from "./Images/Invest.png";
+import CorporateTraining1 from "./Images/CorporateTraining1.png";
+import CorporateTraining2 from "./Images/CorporateTraining2.png";
+import CorporateTraining03 from "./Images/CorporateTraining03.jpg";
+import CorporateTraining04 from "./Images/CorporateTraining04.jpg";
+import CorporateTraining3 from "./Images/CorporateTraining3.png";
+import CorporateTraining4 from "./Images/CorporateTraining4.png";
+import CorporateTraining5 from "./Images/CorporateTraining5.png";
+import CorporateTraining6 from "./Images/CorporateTraining6.png";
+import CorporateTraining7 from "./Images/CorporateTraining7.png";
+import CorporateTraining8 from "./Images/CorporateTraining8.png";
+import CorporateTraining9 from "./Images/CorporateTraining9.png";
+import CorporateTraining10 from "./Images/CorporateTraining10.png";
+import CorporateTraining11 from "./Images/CorporateTraining11.png";
+import CorporateTraining12 from "./Images/CorporateTraining12.png";
+import CorporateTraining13 from "./Images/CorporateTraining13.png";
+import CorporateTraining14 from "./Images/CorporateTraining14.png";
+import CorporateTraining15 from "./Images/CorporateTraining15.png";
+import CorporateTraining16 from "./Images/CorporateTraining16.png";
+import CorporateTraining17 from "./Images/CorporateTraining17.jpg";
+import CorporateTraining18 from "./Images/CorporateTraining18.png";
+import CorporateTraining19 from "./Images/CorporateTraining19.png";
+import CorporateTraining20 from "./Images/CorporateTraining20.png";
+import CorporateTraining21 from "./Images/CorporateTraining21.png";
+import CorporateTraining22 from "./Images/CorporateTraining22.png";
+import CorporateTraining23 from "./Images/CorporateTraining23.png";
+import CorporateTraining24 from "./Images/CorporateTraining24.png";
+import CorporateTraining25 from "./Images/CorporateTraining25.png";
 import "./App.css";
-import WingsBanner from "./Images/WingsWayBanner.jpg";
-import CourseContent from "./Images/Course Content.jpg";
+// import WingsBanner from "./Images/WingsWayBanner.jpg";
+// import CourseContent from "./Images/Course Content.jpg";
 import EntryQualification from "./Images/Entry Qualification.jpeg";
 import LearningOutcomes from "./Images/Learning Outcomes.jpeg";
-import CareerOpportunities from "./Images/Career Opportunities.jpg";
+// import CareerOpportunities from "./Images/Career Opportunities.jpg";
 import KeyTopics from "./Images/Key Topics.jpg";
 import LearnerProfile from "./Images/Learner’s Profile.jpeg";
 import ISO from "./Images/ISOCertified.png";
@@ -61,6 +90,14 @@ import DET from "./Images/DET.png";
 import contactsvg from "./Images/Contactsvg.svg";
 import Contactbanner from "./Images/Contactbanner.png";
 import ElevateImage from "./Images/ElevateImage.png";
+import Testimonial1 from "./Images/Testimonial1.png";
+import Testimonial2 from "./Images/Testimonial2.png";
+import Testimonial3 from "./Images/Testimonial3.png";
+import Testimonial4 from "./Images/Testimonial4.png";
+import Testimonial5 from "./Images/Testimonial5.png";
+import Testimonial6 from "./Images/Testimonial6.png";
+
+import Enquire from "./Images/EnquireNow.jpg";
 
 const text1 = `Our trainings are customisable to fit individual and organisational needs.`;
 const text2 = `Our trainers have experience working with organisations of different sizes and in various industries.`;
@@ -72,30 +109,46 @@ const items = [
   {
     key: "1",
     label: (
-      <h4 className="accordion-label" style={{color:"white"}}>Personalised Training Just for You</h4>
+      <h4 className="accordion-label" style={{ color: "white" }}>
+        Personalised Training Just for You
+      </h4>
     ),
     children: <p style={{ fontSize: "18px" }}>{text1}</p>,
   },
   {
     key: "2",
-    label: <h4 className="accordion-label" style={{color:"white"}}>Expert-Led Training</h4>,
+    label: (
+      <h4 className="accordion-label" style={{ color: "white" }}>
+        Expert-Led Training
+      </h4>
+    ),
     children: <p style={{ fontSize: "18px" }}>{text2}</p>,
   },
   {
     key: "3",
-    label: <h4 className="accordion-label" style={{color:"white"}}>Real-World Simulations</h4>,
+    label: (
+      <h4 className="accordion-label" style={{ color: "white" }}>
+        Real-World Simulations
+      </h4>
+    ),
     children: <p style={{ fontSize: "18px" }}>{text3}</p>,
   },
   {
     key: "4",
     label: (
-      <h4 className="accordion-label" style={{color:"white"}}>Access to Learning Management System</h4>
+      <h4 className="accordion-label" style={{ color: "white" }}>
+        Access to Learning Management System
+      </h4>
     ),
     children: <p style={{ fontSize: "18px" }}>{text4}</p>,
   },
   {
     key: "5",
-    label: <h4 className="accordion-label" style={{color:"white"}}>Tech-Driven Learning</h4>,
+    label: (
+      <h4 className="accordion-label" style={{ color: "white" }}>
+        Tech-Driven Learning
+      </h4>
+    ),
     children: <p style={{ fontSize: "18px" }}>{text5}</p>,
   },
 ];
@@ -793,7 +846,7 @@ export default function Home({ handleModalOpen }) {
     ],
   };
 
-  const corporatetraining  = {
+  const corporatetraining = {
     dots: true,
     infinite: true,
     speed: 500,
@@ -843,8 +896,99 @@ export default function Home({ handleModalOpen }) {
           slidesToScroll: 1,
           speed: 300,
           arrows: true,
-          dots: false
+          dots: false,
+        },
+      },
+    ],
+  };
 
+  const Photosfromourcorporate = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
+    cssEase: "linear",
+    autoplaySpeed: 4000,
+    // initialSlide: 0,
+    arrows: true,
+    adaptiveHeight: true,
+
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+          speed: 300,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          speed: 300,
+          dots: false,
+
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+          dots: false,
+        },
+      },
+    ],
+  };
+
+  const Clientreviews = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    autoplay: false,
+    cssEase: "linear",
+    autoplaySpeed: 4000,
+    adaptiveHeight: true,
+
+    // initialSlide: 0,
+    arrows: true,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          infinite: true,
+          dots: true,
+          speed: 300,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+          speed: 300,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          speed: 300,
+          dots: false,
         },
       },
     ],
@@ -923,12 +1067,12 @@ export default function Home({ handleModalOpen }) {
               <div className="row mt-5 mt-lg-3  rounded-5 p-1 terminalresponsive-container align-items-center">
                 {/* First Column with Text */}
                 <motion.div
-                  className="col-12 col-lg-6  text-start"
+                  className="col-12 col-lg-5  text-start"
                   initial={{ opacity: 0 }}
                   animate={{ opacity: 1 }}
                   transition={{ duration: 1.5 }}
                 >
-                   <img
+                  <img
                     src={Upskillanddriveresults}
                     alt="Upskill And Drive Results Image "
                     className="ms-0 ms-lg-3 UpskillImagewidth mt-4"
@@ -950,7 +1094,7 @@ export default function Home({ handleModalOpen }) {
                 {/* Second Column with Form */}
                 <motion.div
                   id="enquire-now"
-                  className="col-12 col-lg-5 col-xl-5 ms-auto me-lg-3 mb-3 rounded-5 mt-3"
+                  className="col-12 col-lg-6 col-xl-5 ms-auto me-lg-3 mb-3 rounded-5 mt-3"
                   style={{ backgroundColor: "#011689", padding: "20px" }}
                   initial={{ opacity: 0, y: 50 }}
                   animate={{ opacity: 1, y: 0 }}
@@ -1117,7 +1261,6 @@ export default function Home({ handleModalOpen }) {
           </div>
         </div>
 
-        
         <div
           className={`container mt-5 border border-white rounded-4 slide-in-left ${
             hasViewedSlide.zeroElement ? "animate-slide-in" : ""
@@ -1366,7 +1509,7 @@ export default function Home({ handleModalOpen }) {
           </Slider>
         </div>
 
-        <div className="container-fluid  mt-5  ">
+        {/* <div className="container-fluid  mt-5  ">
           <div className="row WhyChoose-container">
             <div className="col-12">
               <h1 className="text-center WingsWayHeading">
@@ -1400,7 +1543,9 @@ export default function Home({ handleModalOpen }) {
               </div>
 
               <p className="mt-3 text-center">
-              Approved by the Dubai Department of Economy & Tourism (DET), which is the principal authority for the supervision and development of Dubai’s economy and tourism sectors. 
+                Approved by the Dubai Department of Economy & Tourism (DET),
+                which is the principal authority for the supervision and
+                development of Dubai’s economy and tourism sectors.
               </p>
             </div>
 
@@ -1409,7 +1554,9 @@ export default function Home({ handleModalOpen }) {
                 <img src={KHDA} alt="KHDA Image" className="img-fluid w-25" />
               </div>
               <p className="mt-3 text-center">
-                WingsWay Training Institute is approved and recognised by the Knowledge and Human Development Authority (KHDA), ensuring the highest standards of education in Dubai. 
+                WingsWay Training Institute is approved and recognised by the
+                Knowledge and Human Development Authority (KHDA), ensuring the
+                highest standards of education in Dubai.
               </p>
             </div>
             <div className="col-12 col-lg-4 mt-5 mt-lg-0">
@@ -1417,11 +1564,12 @@ export default function Home({ handleModalOpen }) {
                 <img src={ISO} alt="ISO Image" className="img-fluid w-25" />
               </div>
               <p className="mt-3 text-center">
-              WingsWay Training Institute is certified with the prestigious ISO 9001:2015 by the International Accreditation Forum (IAF).
+                WingsWay Training Institute is certified with the prestigious
+                ISO 9001:2015 by the International Accreditation Forum (IAF).
               </p>
             </div>
           </div>
-        </div>
+        </div> */}
 
         <div className="container-fluid mt-5 " ref={counterSectionRef}>
           <div
@@ -1542,7 +1690,10 @@ export default function Home({ handleModalOpen }) {
           </div>
         </div>
 
-        <div className="container-fluid  mt-5 pt-5  m-auto  text-white"   style={{ backgroundColor: "#011689" }}>
+        <div
+          className="container-fluid  mt-5 pt-3  m-auto  text-white"
+          style={{ backgroundColor: "#011689" }}
+        >
           <div
             className={`row text-white   p-3 slide-in-left aboutdivwidth  ${
               hasViewedSlide.thirdElement ? "animate-enquire" : ""
@@ -1552,7 +1703,7 @@ export default function Home({ handleModalOpen }) {
           >
             <div className="col-12  text-center text-white ">
               <h1 className="WingsWayHeading">What Sets us Apart </h1>
-              <div className="col-12 mt-5 text-white">
+              <div className="col-12 mt-4 text-white">
                 <Collapse accordion items={items} onChange={onChange} />
               </div>
             </div>
@@ -1561,13 +1712,13 @@ export default function Home({ handleModalOpen }) {
 
         <div className="container mt-5" id="Training">
           <div
-            className={`row slide-in-left  ${
+            className={`row slide-in-left m-auto aboutdivwidth  ${
               hasViewedSlide.fourthElement ? "animate-slide-in" : ""
             }`}
             ref={myRef4}
           >
             <div className="col-12 mt-5 text-center">
-              <h1 style={{ color: "rgb(4, 18, 113)" }} className="fw-bold">
+              <h1 style={{ color: "#0971CE" }} className="WingsWayHeading">
                 Our Corporate Training Programs
               </h1>
             </div>
@@ -1584,7 +1735,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Equip your HR team with essential skills in labour laws,
                       HR policies, digital transformation, workforce planning,
                       ROI measurement, and more.
@@ -1599,7 +1750,7 @@ export default function Home({ handleModalOpen }) {
                       alt="Leadership & Management Image"
                       className="img-fluid"
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Master high-performance leadership, build workplace trust,
                       embrace design thinking, agile leadership, and enhance
                       Emotional & Social Intelligence (ESI).
@@ -1615,7 +1766,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Nurture collaboration and personal growth among your teams
                       through our comprehensive team-building trainings.
                     </p>
@@ -1630,7 +1781,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Polish in-demand skills, such as, public speaking,
                       interpersonal communication, giving feedback, time and
                       task management, and more.
@@ -1646,7 +1797,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Know the essentials of Islamic banking, financial
                       statement analysis, credit management, financial modeling,
                       treasury operations, and more.
@@ -1662,7 +1813,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Master best practices in procurement, inventory
                       management, contract management, procurement compliance,
                       and more.
@@ -1678,7 +1829,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Lead quality assurance through six sigma black and green
                       belts, lean sigma, lean operations management, and
                       strategic quality management.
@@ -1694,7 +1845,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Practice and master advanced Excel with dashboard
                       creation, Power BI, big data, AI, and other digital
                       business analytics tools.
@@ -1710,7 +1861,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Champion customer-centricity through our telesales and
                       sales leadership courses along with customer service
                       specialist course.
@@ -1726,7 +1877,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Learn the basics of anti-money laundering, risk
                       management, and more.
                     </p>
@@ -1741,7 +1892,7 @@ export default function Home({ handleModalOpen }) {
                       className="img-fluid"
                       // style={{ maxWidth: "100%", height: "auto" }}
                     />
-                    <p className="mt-3 text-center">
+                    <p className="mt-3 text-start">
                       Choose from a list of our ‘Espresso’ learning sessions
                       that are targeted, activity-based, result-oriented, and
                       tailored for today’s workforce!
@@ -1761,11 +1912,9 @@ export default function Home({ handleModalOpen }) {
                 </div>
               </Slider>
             </div>
-            <div className="col-12 text-center mt-5">
-              
-
+            <div className="col-12 text-center mt-4 mt-md-5">
               <button
-                className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
+                className="btn btn-lg CorporateEnquireButton CorporateEnquireButtonWidth ms-1 ms-md-0  "
                 onClick={(e) => handleEnquireClick(e, "enquire-now")}
               >
                 Enquire Now
@@ -1774,520 +1923,473 @@ export default function Home({ handleModalOpen }) {
           </div>
         </div>
 
-        <div className="container-fluid  mt-5 bg-light" id="About">
-          <div className="row ">
-            <div className="col-12 mt-5">
-              <h1 className="text-center Aboutheading">About the Course</h1>{" "}
-            </div>
-          </div>
-        </div>
-        <div className="container-fluid bg-light border border-light">
+        <div className="container mt-5" id="Awards">
           <div
-            className={`row d-flex align-items-center justify-content-center mt-3 mt-lg-3 aboutdivwidth slide-in-left ${
-              hasViewedSlide.thirdElement ? "animate-enquire" : ""
-            }`}
-            ref={myRef3}
-          >
-            {/* Content Section */}
-            <div className="col-12 col-lg-6 order-2 order-lg-2">
-              <h2
-                className="text-start ms-lg-4 mt-3 Aboutsubheading"
-                style={{ color: "#011689" }}
-              >
-                Course Content
-              </h2>
-
-              <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li className="ms-lg-4 d-flex align-items-start mt-2">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Introduction to Airport and Airline Ground Operations
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Computer Reservations and Departure Control System Functions
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Check-In Procedures for Passengers and their Baggage (Airport
-                  and Off-site)
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Conditions of Carriage, Boarding Procedures and Close-Out
-                  Messaging
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Dangerous Goods Regulations
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Managing Passenger Interactions
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Aviation Security Requirements for Passenger and Baggage
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Enhanced passenger facilitation
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Future of the Aviation Industry
-                </li>
-              </ul>
-
-              {/* Button for Large Devices */}
-              <div className="mt-3 d-none d-lg-block ms-2">
-                <button
-                  className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4 mt-1"
-                  onClick={(e) => handleEnquireClick(e, "enquire-now")}
-                >
-                  Enquire Now
-                </button>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="col-12 col-lg-6 mt-3 order-1 order-lg-1">
-              <img
-                src={CourseContent}
-                alt="Course Content Image"
-                className="img-fluid Learning-outcome-image-height"
-                style={{ borderRadius: "3px 30px 3px 30px" }}
-              />
-            </div>
-
-            {/* Button Section for Small and Medium Devices */}
-            <div className="col-12 mt-2 ms-3 order-3 d-block d-lg-none">
-              <button
-                className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
-                onClick={(e) => handleEnquireClick(e, "enquire-now")}
-              >
-                Enquire Now
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid bg-light border border-light">
-          <div
-            className={`row bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth slide-in-left ${
-              hasViewedSlide.fourthElement ? "animate-slide-in" : ""
+            className={`row  slide-in-left mt-4 align-items-center m-auto  aboutdivwidth ${
+              hasViewedSlide.fourthElement ? "animate-enquire" : ""
             }`}
             ref={myRef4}
           >
-            {/* Content Section */}
-            <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 ">
+            <div className="col-12 text-center mt-3">
               <h1
-                className="text-start Aboutsubheading"
-                style={{ color: "#0971CE" }}
+                className=" text-center WingsWayHeading"
+                style={{ color: "#011689" }}
               >
-                Career Opportunities
+                Our Awards and Recognitions
               </h1>
-
+            </div>
+            <div className="col-12 col-lg-6 mt-3  mt-lg-3 mt-xxl-5 mb-lg-3 mb-xl-3 mb-xxl-3 justify-content-center border border-white">
+              <p className="text-start " >
+                At WingsWay, our commitment to excellence has earned us
+                prestigious awards and recognitions, reflecting the trust and
+                impact we've delivered to individuals and organisations
+                worldwide. We are:
+              </p>
               <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li
-                  className="d-flex align-items-start mt-2
-                "
-                >
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Airport Manager
-                </li>
                 <li className="d-flex align-items-start mt-1">
+                  {" "}
                   <FontAwesomeIcon
                     icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    style={{ color: "#011689" }}
+                    className=" me-2 flex-shrink-0 mt-1"
                   />
-                  Aviation Trainer
+                  <div>
+                    <span style={{ fontWeight: "bold" }}>KHDA Approved:</span>{" "}
+                    <span className="d-block d-sm-inline">
+                      WingsWay Training Institute is approved and recognised by
+                      the Knowledge and Human Development Authority (KHDA),
+                      ensuring the highest standards of education in Dubai.
+                    </span>
+                  </div>
                 </li>
-                <li className="d-flex align-items-start mt-1">
+                <li className=" d-flex align-items-start mt-3 ">
+                  {" "}
                   <FontAwesomeIcon
                     icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    className=" me-2 flex-shrink-0 mt-1"
+                    style={{ color: "#011689" }}
                   />
-                  Customs and Immigration Officer
+                  <div>
+                    <span style={{ fontWeight: "bold" }}>DET Approved:</span>{" "}
+                    <span className="d-block d-sm-inline">
+                      Approved by the Dubai Department of Economy & Tourism
+                      (DET), which is the principal authority for the
+                      supervision and development of Dubai’s economy and tourism
+                      sectors.
+                    </span>
+                  </div>
                 </li>
-                <li className="d-flex align-items-start mt-1">
+                <li className=" d-flex align-items-start mt-3 ">
+                  {" "}
                   <FontAwesomeIcon
                     icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
+                    className="me-2 flex-shrink-0 mt-1"
+                    style={{ color: "#011689 " }}
                   />
-                  Ground Handling Coordinator
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Passenger Service Agent
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Baggage Handler
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Aircraft Dispatcher
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Airport Safety Officer
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Check-In Agent
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Gate Agent
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Customer Service Representative
+                  <div>
+                    <span style={{ fontWeight: "bold" }}>ISO Certified:</span>{" "}
+                    <span className="d-block d-sm-inline">
+                      WingsWay Training Institute is certified with the
+                      prestigious ISO 9001:2015 by the International
+                      Accreditation Forum (IAF).
+                    </span>
+                  </div>
                 </li>
               </ul>
-              <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block ms-2">
-                <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth  mt-1"
-                  onClick={(e) => handleEnquireClick(e, "enquire-now")}
-                >
-                  Enquire Now
-                </button>
-              </div>
             </div>
-            {/* Image Section */}
-            <div className="col-12 col-lg-6 mt-2  order-1 order-lg-3">
+            <div className="col-12 col-lg-6 hover-scale2 mt-3 mt-lg-3 mt-xxl-5 text-center">
               <img
-                src={CareerOpportunities}
-                alt="Career Opportunities Image"
-                className="img-fluid ms-lg-3"
-                style={{ borderRadius: "3px 30px 3px 30px" }}
+                src={award}
+                alt="Award Image"
+                className="img-fluid rounded-3 responsiveAward-img "
               />
-            </div>
-            <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3">
-              <button
-                className="btn btn-lg Demobutton Demoenquirebuttonwidth  ms-lg-4"
-                onClick={(e) => handleEnquireClick(e, "enquire-now")}
-              >
-                Enquire Now
-              </button>
             </div>
           </div>
         </div>
 
-        <div className="container-fluid bg-light border border-light  ">
+        <div className="container mt-5">
           <div
-            className={`row  bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth slide-in-left  ${
-              hasViewedSlide.fifthElement ? "animate-enquire" : ""
+            className={`row mt-5 rounded-4 slide-in-left border border-white align-items-center aboutdivwidth ${
+              hasViewedSlide.fifthElement ? "animate-slide-in" : ""
             }`}
             ref={myRef5}
           >
-            <div className="col-12 col-lg-6 order-2 order-lg-2">
-              <h2
-                className="text-start ms-lg-4 mt-3 Aboutsubheading"
-                style={{ color: "#011689" }}
-              >
-                Entry Qualification
-              </h2>
-              <p className="mt-2 ms-lg-4">
-                This course is suitable for individuals with the following
-                qualifications:
-              </p>
-
-              <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li className="ms-lg-4 d-flex align-items-start mt-2">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Grade 10 / O-Level / Class 10
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  High school graduates
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Undergraduates
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Postgraduates
-                </li>
-                <li className="ms-lg-4 d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#011689" }}
-                  />
-                  Working professionals
-                </li>
-              </ul>
-
-              {/* Button for Large Devices */}
-              <div className="mt-3 d-none d-lg-block ms-2">
-                <button
-                  className="btn btn-lg EnquireButton Enquirebuttonwidth  ms-lg-4 mt-1"
-                  onClick={(e) => handleEnquireClick(e, "enquire-now")}
-                >
-                  Enquire Now
-                </button>
-              </div>
-            </div>
-
-            {/* Image Section */}
-            <div className="col-12 col-lg-6 mt-3 mt-lg-4 order-1 order-lg-1">
-              <img
-                src={EntryQualification}
-                alt="  Entry Qualification Image "
-                className="img-fluid Carreer-oppurtunities-image-height"
-                style={{ borderRadius: "3px 30px 3px 30px" }}
-              />
-            </div>
-
-            {/* Button Section for Small and Medium Devices */}
-            <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3">
-              <button
-                className="btn btn-lg EnquireButton Enquirebuttonwidth ms-lg-4"
-                onClick={(e) => handleEnquireClick(e, "enquire-now")}
-              >
-                Enquire Now
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid bg-light border border-light pb-5">
-          <div
-            className={`row bg-light d-flex align-items-center justify-content-center mt-5 aboutdivwidth slide-in-left   ${
-              hasViewedSlide.sixthElement ? "animate-slide-in" : ""
-            }`}
-            ref={myRef6}
-          >
-            <div className="col-12 col-lg-6 order-2 order-lg-1 mt-3 ">
+            <div className="col-12 col-lg-6">
               <h1
-                className="text-start Aboutsubheading"
-                style={{ color: "#0971CE" }}
+                className="text-start WingsWayHeading
+               "
+                style={{ color: "#0971CE " }}
               >
-                Learner’s Profile
+               Invest in Your Employees, Invest in Your Future.
               </h1>
-
-              <ul style={{ listStyleType: "none", paddingLeft: 0 }}>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Airline passenger service employees
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Ground handling agents
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Airport operator’s employees
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Anyone wanting to kickstart a career in Passenger Ground
-                  Services and gain global exposure.
-                </li>
-                <li className="d-flex align-items-start mt-1">
-                  <FontAwesomeIcon
-                    icon={faCircleCheck}
-                    className="me-2 flex-shrink-0 mt-1 ms-1"
-                    style={{ color: "#0971CE" }}
-                  />
-                  Customer service professionals
-                </li>
-              </ul>
-              <div className="col-12 col-lg-6 d-flex justify-content-start mt-3 order-3 order-lg-2 d-none d-lg-block ms-2">
-                <button
-                  className="btn btn-lg Demobutton Demoenquirebuttonwidth mt-1"
-                  onClick={(e) => handleEnquireClick(e, "enquire-now")}
-                >
-                  Enquire Now
-                </button>
-              </div>
-            </div>
-            {/* Image Section */}
-            <div className="col-12 col-lg-6 mt-2 mt-lg-3  order-1 order-lg-3">
-              <img
-                src={LearnerProfile}
-                alt="Learner's Profile Image"
-                className="img-fluid ms-lg-3"
-                style={{ borderRadius: "3px 30px 3px 30px" }}
-              />
-            </div>
-            <div className="col-12 mt-2 order-3 d-block d-lg-none ms-3">
-              <button
-                className="btn btn-lg Demobutton Demoenquirebuttonwidth ms-lg-4"
-                onClick={(e) => handleEnquireClick(e, "enquire-now")}
-              >
-                Enquire Now
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid contactbannerbackImage p-5">
-          <div
-            className={`row slide-in-left d-flex  align-items-center Stillsection  ${
-              hasViewedSlide.seventhElement ? "animate-enquire" : ""
-            }`}
-            ref={myRef7}
-            // style={{ width: "80%", margin: "0 auto" }}
-          >
-            {/* Icon Section */}
-            <div className="col-12 col-sm-4 col-md-2 col-lg-1 text-center mb-3 mb-md-0">
-              <img src={contactsvg} alt="contact svg" />
-            </div>
-
-            {/* Text Section */}
-            <div className="col-12 col-sm-8 col-md-6 col-lg-8 ps-lg-3 ps-xl-0 ps-xxl-0 text-center text-md-start text-lg-start mb-3 mb-md-0 mt-lg-3">
-              <p className="conactbannertext">
-                Still have questions about our courses? Get in touch today.
+              <p className="mt-3">
+              Your employees are your greatest asset. By investing in their growth and development, you're not just improving their skills, but also strengthening your organisation's future. Our training programmes are designed to equip your team with the knowledge and tools they need to perform their best and contribute positively to your company's goals.
               </p>
             </div>
 
-            {/* Button Section */}
-            <div className="col-12 col-sm-12 col-md-4 col-lg-3  text-center text-md-end text-lg-center">
-              <button
-                className="btn btn-lg contactusbutton"
-                onClick={() => {
-                  window.location.href = "tel:+971 4 222 0885"; // Replace with your phone number
-                }}
-              >
-                <span>Contact Us</span>
-                <span className="ms-3">
-                  <FontAwesomeIcon icon={faArrowRight} />
-                </span>
-              </button>
-            </div>
-          </div>
-        </div>
-
-        <div className="container-fluid mt-5">
-          <div
-            className={`row slide-in-left  ${
-              hasViewedSlide.eigthElement ? "animate-slide-in" : ""
-            }`}
-            ref={myRef8}
-          >
-            <div className="col-12 mt-3 mt-lg-0 text-center">
+            <div className="col-12 col-lg-6 text-center">
               <img
-                src={WingsBanner}
-                alt="WingsBanner Image"
-                className="img-fluid rounded-3 shadow w-100 d-lg-none" // Ensures 100% width for small and medium devices
-              />
-              <img
-                src={WingsBanner}
-                alt="WingsBanner Image"
-                className="img-fluid rounded-3 shadow  d-none d-lg-inline"
-                style={{ width: "60%" }} // Ensures 75% width for large devices and above
+                src={invest}
+                alt="Invest in Your Employees, Invest in Your Future Image"
+                className="img-fluid text-center responsiveInvest-img"
               />
             </div>
           </div>
         </div>
 
         <div
+          className={` container mt-5 border border-white  rounded-4 slide-in-left   ${
+            hasViewedSlide.sixthElement ? "animate-enquire" : ""
+          }`}
+          ref={myRef6}
+          id="Testimonials"
+        >
+          <div className="row  mt-3">
+            <div className="col-12 text-center mb-4">
+              <h1 className="WingsWayHeading" style={{ color: "#011689" }}>
+                Photos From Our Corporate Trainings
+              </h1>
+            </div>
+          </div>
+
+          <Slider
+            {...Photosfromourcorporate}
+            className="m-0 p-0 col-9 col-md-8 col-lg-8 m-auto  justify-content-center align-items-center "
+          >
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+              >
+                <img
+                  src={CorporateTraining1}
+                  alt="Corporate Training Image1 "
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining2}
+                  alt="Corporate Training Image2"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining03}
+                  alt="Corporate Training Image3"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining04}
+                  alt="Corporate Training Image04"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div >
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining3}
+                  alt="Corporate Training Image3"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining5}
+                  alt="Corporate Training Image5"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining6}
+                  alt="Corporate Training Image6"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining7}
+                  alt="Corporate Training Image7"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining8}
+                  alt="Corporate Training Image8"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+
+            {/* <div>
+              <div className=" p-3 shadow-sm border border-2 border-light rounded-3  mt-2 ms-2 Trainingsresponsive-div text-center">
+                <img src={CorporateTraining9} alt="Corporate Training Image8" className="img-fluid" />
+              </div>
+            </div> */}
+
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining10}
+                  alt="Corporate Training Image10"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining11}
+                  alt="Corporate Training Image11"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining12}
+                  alt="Corporate Training Image12"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining13}
+                  alt="Corporate Training Image13"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className="p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining16}
+                  alt="Corporate Training Image16"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining15}
+                  alt="Corporate Training Image15"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className="p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining18}
+                  alt="Corporate Training Image18"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            {/* <div>
+              <div className=" p-3 shadow-sm border border-2 border-light rounded-3  mt-2 ms-2 Trainingsresponsive-div text-center">
+                <img src={CorporateTraining17} alt="Corporate Training Image16" className="img-fluid" />
+              </div>
+            </div> */}
+           
+            <div className="m-auto">
+              <div
+                className="p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining22}
+                  alt="Corporate Training Image22"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className="p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining23}
+                  alt="Corporate Training Image23"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1 text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining24}
+                  alt="Corporate Training Image24"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+            <div className="m-auto">
+              <div
+                className=" p-lg-1  text-center"
+                style={{ alignContent: "center" }}
+              >
+                <img
+                  src={CorporateTraining25}
+                  alt="Corporate Training Image25"
+                  className="img-fluid rounded-3 "
+                />
+              </div>
+            </div>
+          
+          </Slider>
+        </div>
+
+        <div className="container mt-5" id="Reviews">
+          <div
+            className={`row slide-in-left aboutdivwidth ${
+              hasViewedSlide.sixthElement ? "animate-slide-in" : ""
+            }`}
+            ref={myRef6}
+          >
+            <div className="col-12 mt-5 text-center">
+              <h1 style={{ color: "#0971CE" }} className="mt-3">
+                Client Reviews
+              </h1>
+            </div>
+            <div className="d-flex justify-content-center mt-4">
+              <Slider
+                {...Clientreviews}
+                className="col-10 col-md-8 col-lg-11 "
+              >
+                <div>
+                  <div className="p-1  text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial1}
+                      alt="Review Image1"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="p-1  text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial2}
+                      alt="Review Image2"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="p-1 text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial3}
+                      alt="Review Image3"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="p-1  text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial4}
+                      alt="Review Image4"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="p-1  text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial5}
+                      alt="Review Image5"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+                <div>
+                  <div className="p-1  text-center reviewresponsive-div ms-lg-2">
+                    <img
+                      src={Testimonial6}
+                      alt="Review Image6"
+                      className="img-fluid"
+                    />
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </div>
+
+        {/* <div
           className={` container-fluid  mt-5   rounded-4 slide-in-left    ${
             hasViewedSlide.ninethElement ? "animate-enquire" : ""
           }`}
@@ -2403,6 +2505,44 @@ export default function Home({ handleModalOpen }) {
               </div>
             </div>
           </Slider>
+        </div> */}
+        <div className="container mt-5 " id="learner">
+          <div className="m-0 p-0 mt-5 border border-white">
+          <div
+            className={`row aboutdivwidth p-3 slide-in-left mt-5 align-items-center border border-light  shadow ${
+              hasViewedSlide.seventhElement ? "animate-enquire" : ""
+            }`}
+            ref={myRef7}
+          >
+           
+            <div className="col-12 col-lg-6 mt-4 mt-lg-4 mt-xxl-0 mb-lg-3 mb-xl-3 mb-xxl-3 justify-content-center border border-white ps-5">
+              <h1 className="text-start WingsWayHeading" style={{color:"#011689"}}>Enquire Now
+              </h1>
+              <p className="text-start mt-3">
+              Are you ready to transform your workforce? Our customised corporate training programmes can improve your team's skills, increase productivity, and nurture leadership. Contact our Training Solutions Specialists today!
+              </p>
+             
+
+
+              <button
+                className="btn btn-lg EnquireButton Enquirebuttonwidth"
+                onClick={(e) => handleEnquireClick(e, "enquire-now")}
+              >
+                Enquire Now
+              </button>
+            
+
+            </div>
+            <div className="col-12 col-lg-6 hover-scale2 mt-3 mt-lg-5 mt-xl-5 mt-xxl-5 text-center">
+              <img
+                src={Enquire}
+                alt="Enquire Image"
+                className="img-fluid rounded-3 Enquire-img "
+                style={{width:"60%"}}
+              />
+            </div>
+          </div>
+          </div>
         </div>
 
         <div className="container-fluid ">
@@ -2460,14 +2600,14 @@ export default function Home({ handleModalOpen }) {
         </div>
 
         <div
-          className="container-fluid text-center"
+          className="container-fluid text-center d-flex justify-content-center  m-auto"
           style={{ backgroundColor: "black" }}
         >
           <div
             className="row d-flex justify-content-center align-items-center  "
             style={{ backgroundColor: "black" }}
           >
-            <div className="col-12 col-md-12 col-lg-2 d-flex flex-column align-items-center text-center ms-lg-5 ">
+            <div className="col-12 col-md-12 col-lg-4 d-flex flex-column align-items-center text-center ms-lg-5 ">
               <img
                 src={Footerlogo}
                 alt="logo"
@@ -2475,17 +2615,17 @@ export default function Home({ handleModalOpen }) {
               />
             </div>
 
-            <div className="col-12 col-md-12 col-lg-2 text-center mt-lg-2 text-lg-center ">
+            <div className="col-12 col-md-12 col-lg-6 text-center mt-lg-4 text-lg-center ">
               <a
                 href="#Coursediscription"
                 className="footer-link footerlinktext"
                 onClick={(e) => handleFooterLinkClick(e, "Coursediscription")}
               >
-                <span>Course Description</span>
+                <p>© 2025 WingsWay All rights reserved</p>
               </a>
             </div>
 
-            <div className="col-12 col-md-12 col-lg-2 mt-3 mt-md-3 text-center mt-lg-2 mt-3 mt-md-5 text-lg-center ">
+            {/* <div className="col-12 col-md-12 col-lg-2 mt-3 mt-md-3 text-center mt-lg-2 mt-3 mt-md-5 text-lg-center ">
               <a
                 href="#About"
                 className="footer-link footerlinktext"
@@ -2503,15 +2643,16 @@ export default function Home({ handleModalOpen }) {
               >
                 <span>Testimonial</span>
               </a>
-            </div>
-            <div
+            </div> */}
+
+            {/* <div
               className="row "
               style={{ backgroundColor: "black", color: "white" }}
             >
               <div className="col-12 text-center mt-3 mt-md-5 mt-lg-0 mb-5">
                 <p>© 2025 WingsWay All rights reserved</p>
               </div>
-            </div>
+            </div> */}
           </div>
         </div>
       </div>

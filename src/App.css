@@ -582,7 +582,7 @@ button.EnquireButton:hover {
 
 /* Default Width for Enquire Button */
 .EnquireButton.Enquirebuttonwidth {
-  width: 30% !important;
+  width: 50% !important;
 }
 
 /* Adjust Width for Medium Devices */
@@ -624,10 +624,19 @@ button.EnquireButton:hover {
   width: 60% !important;
 }
 
+.CorporateEnquireButton.CorporateEnquireButtonWidth{
+  width: 30% !important;
+
+}
+
 /* Adjust Width for Medium Devices */
 @media (max-width: 1025px) {
   .Demobutton.Demoenquirebuttonwidth {
     width: 100% !important;
+  }
+  .CorporateEnquireButton.CorporateEnquireButtonWidth{
+    width: 30% !important;
+
   }
 }
 
@@ -636,6 +645,10 @@ button.EnquireButton:hover {
   .Demobutton.Demoenquirebuttonwidth {
     width: 40% !important;
   }
+  .CorporateEnquireButton.CorporateEnquireButtonWidth{
+    width: 50% !important;
+
+  }
 }
 
 /* Adjust Width for Smaller Devices (Phones) */
@@ -643,17 +656,30 @@ button.EnquireButton:hover {
   .Demobutton.Demoenquirebuttonwidth {
     width: 60% !important;
   }
+  .CorporateEnquireButton.CorporateEnquireButtonWidth{
+    width: 72% !important;
+
+  }
 }
 
 @media (max-width: 376px) {
   .Demobutton.Demoenquirebuttonwidth {
     width: 60% !important;
   }
+  .CorporateEnquireButton.CorporateEnquireButtonWidth{
+    width: 72% !important;
+
+  }
 }
 
 @media (max-width: 321px) {
   .Demobutton.Demoenquirebuttonwidth {
     width: 60% !important;
+  }
+
+  .CorporateEnquireButton.CorporateEnquireButtonWidth{
+    width: 72% !important;
+
   }
 }
 
@@ -832,13 +858,13 @@ button.EnquireButton:hover {
 
   .corporatetrainingresponsive-div {
     width: 95%;
-    height: 550px; /* Default height for large devices */
+    height: 450px; /* Default height for large devices */
   }
   
   @media (max-width: 1024px) {
     /* For medium devices */
     .corporatetrainingresponsive-div {
-      height: 460px;
+      height: 405px;
     }
   }
   
@@ -871,5 +897,35 @@ button.EnquireButton:hover {
       height: auto;
     }
     
+  }
+  
+
+  .CorporateEnquireButton {
+    /* Smooth transition for hover effect */
+    color: white !important;
+    background-color: #0971CE !important;
+    border: 2px solid #0971CE !important;
+    /* padding: 20px !important; */
+  
+  }
+  
+  button.CorporateEnquireButton:hover {
+    background-color: white !important;
+    color: #011689 !important;
+    border: 2px solid #011689 !important;
+  }
+
+  /* .CorporateEnquireButton.CorporateEnquireButtonWidth {
+    width: 50% !important;
+  } */
+
+  .responsiveInvest-img {
+    width: 536px !important; /* Default: Small devices (<=992px) */
+  }
+
+  @media (min-width: 992px) { 
+    .responsiveInvest-img {
+      width: 80% !important; /* Large devices (>=992px) */
+    }
   }
   
