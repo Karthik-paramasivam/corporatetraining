@@ -1221,10 +1221,11 @@ export default function Home({ handleModalOpen }) {
         </div>
 
         <div
-          className={`container mt-5 border border-white rounded-4 slide-in-left ${
-            hasViewedSlide.zeroElement ? "animate-slide-in" : ""
-          }`}
-          ref={myRef0}
+          // className={`container mt-5 border border-white rounded-4 slide-in-left ${
+          //   hasViewedSlide.zeroElement ? "animate-slide-in" : ""
+          // }`}
+          // ref={myRef0}
+          className="container mt-5 border border-white rounded-4"
           id="Employees"
         >
           <div className="row border-primary">
