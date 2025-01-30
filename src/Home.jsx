@@ -808,7 +808,7 @@ export default function Home({ handleModalOpen }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     cssEase: "linear",
     autoplaySpeed: 4000,
     adaptiveHeight: true,
@@ -852,7 +852,7 @@ export default function Home({ handleModalOpen }) {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 3,
-    autoplay: false,
+    autoplay: true,
     cssEase: "linear",
     autoplaySpeed: 4000,
     adaptiveHeight: true,
@@ -908,7 +908,7 @@ export default function Home({ handleModalOpen }) {
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: false,
+    autoplay: true,
     cssEase: "linear",
     autoplaySpeed: 4000,
     // initialSlide: 0,
@@ -955,7 +955,7 @@ export default function Home({ handleModalOpen }) {
     speed: 500,
     slidesToShow: 2,
     slidesToScroll: 2,
-    autoplay: false,
+    autoplay: true,
     cssEase: "linear",
     autoplaySpeed: 4000,
     adaptiveHeight: true,
@@ -994,48 +994,7 @@ export default function Home({ handleModalOpen }) {
     ],
   };
 
-  const settings = {
-    dots: false,
-    infinite: true,
-    speed: 500,
-    slidesToShow: 1,
-    slidesToScroll: 1,
-    autoplay: true,
-    cssEase: "linear",
-    autoplaySpeed: 2500,
-    // initialSlide: 0,
-    adaptiveHeight: true,
-    arrows: true,
-    responsive: [
-      {
-        breakpoint: 1024,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: false,
-          speed: 300,
-        },
-      },
-      {
-        breakpoint: 768,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          initialSlide: 1,
-          speed: 300,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
-          speed: 300,
-        },
-      },
-    ],
-  };
+ 
   return (
     <>
       <style>{styl}</style>
@@ -1713,7 +1672,7 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Training">
           <div
             className={`row slide-in-left m-auto aboutdivwidth  ${
-              hasViewedSlide.thirdElement ? "animate-slide-in" : ""
+              hasViewedSlide.thirdElement ? "animate-enquire" : ""
             }`}
             ref={myRef3}
           >
@@ -1926,7 +1885,7 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Awards">
           <div
             className={`row  slide-in-left mt-4 align-items-center m-auto  aboutdivwidth ${
-              hasViewedSlide.fourthElement ? "animate-enquire" : ""
+              hasViewedSlide.fourthElement ? "animate-slide-in" : ""
             }`}
             ref={myRef4}
           >
@@ -2010,7 +1969,7 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5">
           <div
             className={`row mt-5 rounded-4 slide-in-left border border-white align-items-center aboutdivwidth ${
-              hasViewedSlide.fifthElement ? "animate-slide-in" : ""
+              hasViewedSlide.fifthElement ? "animate-enquire" : ""
             }`}
             ref={myRef5}
           >
@@ -2039,7 +1998,7 @@ export default function Home({ handleModalOpen }) {
 
         <div
           className={` container mt-5 border border-white  rounded-4 slide-in-left   ${
-            hasViewedSlide.sixthElement ? "animate-enquire" : ""
+            hasViewedSlide.sixthElement ? "animate-slide-in" : ""
           }`}
           ref={myRef6}
         >
@@ -2315,7 +2274,7 @@ export default function Home({ handleModalOpen }) {
         <div className="container mt-5" id="Reviews">
           <div
             className={`row slide-in-left aboutdivwidth ${
-              hasViewedSlide.seventhElement ? "animate-slide-in" : ""
+              hasViewedSlide.seventhElement ? "animate-enquire" : ""
             }`}
             ref={myRef7}
           >
@@ -2393,7 +2352,7 @@ export default function Home({ handleModalOpen }) {
           <div className="m-0 p-0 mt-5 border border-white">
           <div
             className={`row aboutdivwidth p-3 slide-in-left mt-5 align-items-center border border-light  shadow ${
-              hasViewedSlide.eigthElement ? "animate-enquire" : ""
+              hasViewedSlide.eigthElement ? "animate-slide-in" : ""
             }`}
             ref={myRef8}
           >
@@ -2448,7 +2407,7 @@ export default function Home({ handleModalOpen }) {
         <div className="container-fluid elevatebannerbackImage elevatewidth p-3 pb-4 mt-5 p-lg-5">
           <div
             className={`row slide-in-left d-flex justify-content-center align-items-center elevatewidth  p-lg-2 p-xl-5  ${
-              hasViewedSlide.ninethElement ? "animate-slide-in" : ""
+              hasViewedSlide.ninethElement ? "animate-enquire" : ""
             }`}
             ref={myRef9}
           >
@@ -2504,7 +2463,7 @@ export default function Home({ handleModalOpen }) {
                 className="footer-link footerlinktext"
                 onClick={(e) => handleFooterLinkClick(e, "Coursediscription")}
               >
-                <p className="mb-5">© 2025 WingsWay All rights reserved</p>
+                <p className="mb-5 mb-lg-0">© 2025 WingsWay All rights reserved</p>
               </a>
             </div>
 
