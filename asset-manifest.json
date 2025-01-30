@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/corporatetraining/static/css/main.5f20ddd4.css",
-    "main.js": "/corporatetraining/static/js/main.35344cb2.js",
+    "main.js": "/corporatetraining/static/js/main.2f0bcbe6.js",
     "static/js/488.7e101b22.chunk.js": "/corporatetraining/static/js/488.7e101b22.chunk.js",
     "static/media/Key Topics.jpg": "/corporatetraining/static/media/Key Topics.22870a8d754e7e71f424.jpg",
     "static/media/dafz.png": "/corporatetraining/static/media/dafz.d5431020b8a23016197c.png",
@@ -93,11 +93,11 @@
     "static/media/Contactsvg.svg": "/corporatetraining/static/media/Contactsvg.15e14b7072527e1d38f3fedc3870d4a8.svg",
     "index.html": "/corporatetraining/index.html",
     "main.5f20ddd4.css.map": "/corporatetraining/static/css/main.5f20ddd4.css.map",
-    "main.35344cb2.js.map": "/corporatetraining/static/js/main.35344cb2.js.map",
+    "main.2f0bcbe6.js.map": "/corporatetraining/static/js/main.2f0bcbe6.js.map",
     "488.7e101b22.chunk.js.map": "/corporatetraining/static/js/488.7e101b22.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.5f20ddd4.css",
-    "static/js/main.35344cb2.js"
+    "static/js/main.2f0bcbe6.js"
   ]
 }
